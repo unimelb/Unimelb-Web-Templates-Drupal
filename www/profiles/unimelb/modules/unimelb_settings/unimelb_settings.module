@@ -1,0 +1,323 @@
+<?php
+
+
+
+/**
+* Implements hook_entity_info_alter().
+*/
+
+/*
+
+function unimelb_settings_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['xyz'] = array(
+    'label' => t('XYZ'),
+    'custom settings' => TRUE,
+  );
+}
+
+*/
+
+
+/**
+* Implement hook_menu_alter().
+*/
+
+/*
+function unimelb_settings_menu_alter(&$items) {
+  if (module_exists('field_ui')) {
+    $items['admin/structure/types/manage/%node_type/fields']['context'] = MENU_CONTEXT_PAGE | MENU_CONTEXT_INLINE;
+    $items['admin/structure/types/manage/%node_type/display']['context'] = MENU_CONTEXT_PAGE | MENU_CONTEXT_INLINE;
+  }
+}
+*/
+
+/**
+* Implement hook_node_view_alter().
+*
+*/
+
+/*
+function unimelb_settings_node_view_alter(&$build) {
+  $node = $build['#node'];
+  $view_mode = $build['#view_mode'];
+
+  if (!empty($node->nid)) {
+
+    $build['#contextual_links']['node'] = array('node', array($node->nid));
+
+    // Field UI doesn't provide its own contextual links, so we pretend to be
+    // Field UI. This could backfire.
+    $build['#contextual_links']['field_ui'] = array('admin/structure/types/manage', array($node->type));
+
+    // $build['#contextual_links']['search'] = array();
+
+  }
+}
+*/
+
+
+
+/**
+* Implements hook_preprocess_node().
+*/
+function unimelb_settings_preprocess_node(&$vars) {
+  if($vars['view_mode'] == 'event') {
+    $vars['theme_hook_suggestions'][] = 'node__' . $vars['type'] . '__event';
+  }
+  if($vars['view_mode'] == 'teaser') {
+    $vars['theme_hook_suggestions'][] = 'node__' . $vars['type'] . '__teaser';
+  }
+}
+
+
+function unimelb_settings_menu() {
+
+  $items['admin/shortcuts/unimelb_settings'] = array(
+    'title' => 'Unimelb settings',
+    'description' => 'Administer Unimelb Settings',
+    'page callback' => 'unimelb_settings_call',
+'access arguments' => array('administer users'),
+    'weight' => -50,
+    'type' =>  MENU_CALLBACK,
+  );
+
+  return $items;
+
+}
+
+
+function unimelb_settings_shortcuts() {
+	
+$config1['delta'] = '1';
+$config1['menu_name'] = 'management';
+$config1['parent_mlid'] = '0';
+$config1['title_link'] = 'no';
+$config1['admin_title'] = 'menu1';
+$config1['level'] = '2';
+$config1['follow'] = 'child';
+$config1['depth'] = '0';
+$config1['expanded'] = 'no';
+$config1['sort'] = 'no';
+
+	
+$menu1 = menu_tree_build($config1);
+		
+$html = render($menu1['content']);
+
+	return $html;	
+	
+}
+
+function unimelb_settings_help($path, $arg) {
+  if ($path == 'admin/help#unimelb_settings') {
+  return t('Administer Unimelb Settings');
+  }
+}
+
+function unimelb_settings_call() {
+
+$html = '<h2>Unimelb Settings:</h2>';
+$html .= drupal_render(drupal_get_form('unimelb_settings_form', 1));
+return $html;
+
+}
+
+function unimelb_settings_form($form, &$form_state) {
+
+
+$form['unimelb_settings_parent-org'] = array(
+'#type' => 'textfield',
+'#title' => t('Parent organisational unit (optional)'),
+'#description' => t('The parent organisational unit appears on the home page above the site name'),
+'#default_value' => variable_get('unimelb_settings_parent-org', ''),
+'#size' => 60,
+'#maxlength' => 256,
+'#required' => FALSE,
+);
+
+
+
+$form['unimelb_settings_parent-org-url'] = array(
+'#type' => 'textfield',
+'#title' => t('Parent organisational unit URL (optional)'),
+'#description' => t('eg. http://www.unimelb.edu.au'),
+'#default_value' => variable_get('unimelb_settings_parent-org-url', 'http://www.unimelb.edu.au'),
+'#size' => 60,
+'#maxlength' => 256,
+'#required' => FALSE,
+);
+
+$form['unimelb_settings_ht-left'] = array(
+'#type' => 'textfield',
+'#title' => t('Headingtext left (optional)'),
+'#description' => t('The headingtext appears on the home page below the site name. The left portion is a very short phrase providing context for the right portion, eg. "Who we are"'),
+'#default_value' => variable_get('unimelb_settings_ht-left', 'Who we are'),
+'#size' => 40,
+'#maxlength' => 256,
+'#required' => FALSE,
+);
+
+$form['unimelb_settings_ht-right'] = array(
+'#type' => 'textfield',
+'#title' => t('Headingtext right (optional)'),
+'#description' => t('The right portion of the headingtext is a succinct statement describing the web site'),
+'#default_value' => variable_get('unimelb_settings_ht-right', 'The Graduate School of Foo is...'),
+'#size' => 120,
+'#maxlength' => 1024,
+'#required' => FALSE,
+);
+
+$form['unimelb_settings_meta-keywords'] = array(
+'#type' => 'textfield',
+'#title' => t('Meta keywords (optional)'),
+'#description' => t('Comma-separated list of keywords for use in meta tags'),
+'#default_value' => variable_get('unimelb_settings_meta-keywords', ''),
+'#size' => 120,
+'#maxlength' => 1024,
+'#required' => FALSE,
+);
+
+$form['unimelb_settings_ad-line1'] = array(
+'#type' => 'textfield',
+'#title' => t('Address Line 1 (optional)'),
+'#description' => t('eg. Level 1, Raymond Priestly Building'),
+'#default_value' => variable_get('unimelb_settings_ad-line1', 'Level 4, 198 Berkely Street'),
+'#size' => 60,
+'#maxlength' => 512,
+'#required' => FALSE,
+);
+
+$form['unimelb_settings_ad-line2'] = array(
+'#type' => 'textfield',
+'#title' => t('Address Line 2 (optional)'),
+'#description' => t('eg. University of Melbourne'),
+'#default_value' => variable_get('unimelb_settings_ad-line2', 'University of Melbourne'),
+'#size' => 60,
+'#maxlength' => 512,
+'#required' => FALSE,
+);
+
+$form['unimelb_settings_ad-sub'] = array(
+'#type' => 'textfield',
+'#title' => t('City or suburb (optional)'),
+'#description' => t('eg. Parkville'),
+'#default_value' => variable_get('unimelb_settings_ad-sub', 'Parkville'),
+'#size' => 40,
+'#maxlength' => 512,
+'#required' => FALSE,
+); 
+
+$form['unimelb_settings_ad-postcode'] = array(
+'#type' => 'textfield',
+'#title' => t('Postcode (optional)'),
+'#description' => t('eg. 3010'),
+'#default_value' => variable_get('unimelb_settings_ad-postcode', '3010'),
+'#size' => 20,
+'#maxlength' => 10,
+'#required' => FALSE,
+);
+
+$form['unimelb_settings_ad-state'] = array(
+'#type' => 'textfield',
+'#title' => t('State or territory (optional)'),
+'#description' => t('eg. VIC'),
+'#default_value' => variable_get('unimelb_settings_ad-state', 'VIC'),
+'#size' => 20,
+'#maxlength' => 64,
+'#required' => FALSE,
+); 
+
+$form['unimelb_settings_ad-country'] = array(
+'#type' => 'textfield',
+'#title' => t('Country (optional)'),
+'#description' => t('eg. Australia'),
+'#default_value' => variable_get('unimelb_settings_ad-country', 'Australia'),
+'#size' => 20,
+'#maxlength' => 64,
+'#required' => FALSE,
+);
+
+$form['unimelb_settings_ad-phone'] = array(
+'#type' => 'textfield',
+'#title' => t('Phone (required)'),
+'#description' => t('eg. +61 3 8344 1670'),
+'#default_value' => variable_get('unimelb_settings_ad-phone', ''),
+'#size' => 20,
+'#maxlength' => 64,
+'#required' => TRUE,
+);
+
+$form['unimelb_settings_ad-fax'] = array(
+'#type' => 'textfield',
+'#title' => t('Fax (optional)'),
+'#description' => t('eg. +61 3 8344 1670'),
+'#default_value' => variable_get('unimelb_settings_ad-fax', ''),
+'#size' => 20,
+'#maxlength' => 64,
+'#required' => FALSE,
+);
+
+$form['unimelb_settings_ad-email'] = array(
+'#type' => 'textfield',
+'#title' => t('Email (required)'),
+'#description' => t('Email address for general enquiries, eg. example@unimelb.edu.au'),
+'#default_value' => variable_get('unimelb_settings_ad-email', ''),
+'#size' => 40,
+'#maxlength' => 256,
+'#required' => TRUE,
+);
+
+$form['unimelb_settings_fb-url'] = array(
+'#type' => 'textfield',
+'#title' => t('Facebook URL (optional)'),
+'#description' => t('eg. http://www.facebook.com/melbuni'),
+'#default_value' => variable_get('unimelb_settings_fb-url', 'http://www.facebook.com/melbuni'),
+'#size' => 60,
+'#maxlength' => 1024,
+'#required' => FALSE,
+);
+
+$form['unimelb_settings_tw-url'] = array(
+'#type' => 'textfield',
+'#title' => t('Twitter (optional)'),
+'#description' => t('eg. http://www.facebook.com/unimelb'),
+'#default_value' => variable_get('unimelb_settings_tw-url', 'http://www.facebook.com/unimelb'),
+'#size' => 60,
+'#maxlength' => 1024,
+'#required' => FALSE,
+);
+
+$form['unimelb_settings_auth-name'] = array(
+'#type' => 'textfield',
+'#title' => t('Authoriser Name and or Position (required)'),
+'#description' => t('eg. Jane Smith, Faculty of Bar'),
+'#default_value' => variable_get('unimelb_settings_auth-name', ''),
+'#size' => 80,
+'#maxlength' => 256,
+'#required' => TRUE,
+);
+
+$form['unimelb_settings_maint-name'] = array(
+'#type' => 'textfield',
+'#title' => t('Maintainer Name and or Position (required)'),
+'#description' => t('eg. Pat Doe, Faculty of Bar'),
+'#default_value' => variable_get('unimelb_settings_maint-name', ''),
+'#size' => 80,
+'#maxlength' => 256,
+'#required' => TRUE,
+);
+
+$form['unimelb_settings_date-created'] = array(
+'#type' => 'textfield',
+'#title' => t('Date created (optional)'),
+'#description' => t('The date the site was launched, eg. 11 February 2010'),
+'#default_value' => variable_get('unimelb_settings_date-created', ''),
+'#size' => 20,
+'#maxlength' => 256,
+'#required' => FALSE,
+);
+
+return system_settings_form($form);
+
+}
+

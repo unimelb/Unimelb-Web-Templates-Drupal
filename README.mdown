@@ -1,0 +1,40 @@
+Unimelb Drupal Distro
+============================================
+
+The Unimelb Drupal Distro is a pre-developed Drupal web site which uses the University of Melbourne Web Templates
+
+Ways to engage with this resource -
+
+- download the distro and use it to build a Unimelb web site
+- improve and extend the distro directly via GitHub
+- contact Media Insights for further details and support
+
+Web Brand Guidelines
+============================================
+
+The theme and templates in this distro have been created to comply with The University of Melbourne Web Brand Guidelines
+
+Contact for further details about The Web Brand Guidelines: marcom-info@unimelb.edu.au
+
+License
+======================
+
+GNU GENERAL PUBLIC LICENSE - Version 2, June 1991
+
+Provider
+======================
+
+- Media Insights - media@insights.net.au
+- Luke Hodge - luke@insights.net.au
+- Kelvin Wong - kelvin@insights.net.au
+- Joshua Martin - josh@insights.net.au
+
+Thanks to Aaron Tan and team at the Faculty of Architecture, Building and Planning, University of Melbourne, 
+and Paul Tagell and team at Marketing and Communications, University of Melbourne - Media Insights 2011.
+
+Release Notes 
+======================
+
+#7.x-1.0-beta4
+
+- pre-developed Drupal web site 

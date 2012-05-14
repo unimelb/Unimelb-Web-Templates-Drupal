@@ -1,0 +1,32 @@
+name = Unimelb
+description = Media Insights Unimelb Drupal Distro, Profile, Theme, Modules
+version = 7.x-1.0-beta1
+core = 7.x
+
+; thanks to Aaron Tan and team at the Faculty of Architecture, Building and Planning, University of Melbourne, and Paul Tagell and team at Marketing and Communications, University of Melbourne - Media Insights 2011
+
+files[] = unimelb.profile
+
+dependencies[] = block
+;dependencies[] = color
+;dependencies[] = comment
+;dependencies[] = contextual
+;dependencies[] = dashboard
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+;dependencies[] = dblog
+dependencies[] = search
+;dependencies[] = shortcut
+;dependencies[] = toolbar
+;dependencies[] = overlay
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+
+dependencies[] = unimelb_settings

@@ -1,0 +1,11 @@
+name = Iconizer
+description = "Adds icons next to links in Admin-section, well-know protocols and files links."
+core = 7.x
+configure = admin/config/user-interface/iconizer
+files[] = iconizer.admin.inc
+; Information added by drupal.org packaging script on 2011-09-21
+version = "7.x-1.2"
+core = "7.x"
+project = "iconizer"
+datestamp = "1316606204"
+

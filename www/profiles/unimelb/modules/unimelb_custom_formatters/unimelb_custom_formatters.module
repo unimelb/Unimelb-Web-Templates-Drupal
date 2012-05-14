@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Unimelb Custom Formatters feature.
+ */
+
+include_once 'unimelb_custom_formatters.features.inc';

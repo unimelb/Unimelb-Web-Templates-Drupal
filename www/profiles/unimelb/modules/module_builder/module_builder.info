@@ -1,0 +1,13 @@
+name = Module Builder
+description = Builds scaffolding for custom modules.
+package = Development
+core = 7.x
+
+files[] = module_builder.module
+files[] = includes/module_builder.admin.inc
+; Information added by drupal.org packaging script on 2011-12-14
+version = "7.x-2.x-dev"
+core = "7.x"
+project = "module_builder"
+datestamp = "1323822857"
+

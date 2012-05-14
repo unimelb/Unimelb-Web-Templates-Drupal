@@ -1,0 +1,423 @@
+/**
+ * Tecnique from: http://www.askthecssguy.com/2006/12/showing_hyperlink_cues_with_cs_1.html
+ */
+ 
+ /**
+ * Default link padding;
+ */
+.admin-panel .admin-list .compact a ,
+.content .admin-list a { 
+  padding: 4px 0 4px 24px;
+}
+/* Seven uses ul-li with images for admin listings: remove them */
+.content .admin-list li {
+  background: none;
+}
+
+/**
+ * Administration
+ */
+.content .admin-list a[href $='admin/appearance'] {
+   background: url(admin_icons/appearance.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/modules'] {
+   background: url(admin_icons/modules.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/help'] {
+  background: url(admin_icons/help.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/config'] {
+  background: url(admin_icons/config.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/people'] {
+   background: url(admin_icons/people.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/structure'] {
+   background: url(admin_icons/structure.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/content'] {
+   background: url(admin_icons/content.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/dashboard'] {
+   background: url(admin_icons/dashboard.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/reports'] {
+   background: url(admin_icons/reports.png) no-repeat 0 50%;
+}
+
+/**
+ * Configutation - Structure
+ */
+.content .admin-list a[href $='admin/structure/block'] { 
+   background: url(admin_icons/structure-blocks.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/structure/menu'] {
+   background: url(admin_icons/structure-menu.png) no-repeat 0 50%;
+} 
+.content .admin-list a[href $='admin/structure/taxonomy'] {  
+   background: url(admin_icons/structure-taxonomy.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/structure/types'] { 
+   background: url(admin_icons/structure-types.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/structure/trigger'] { 
+   background: url(admin_icons/structure-trigger.png) no-repeat 0 50%;
+}
+
+/**
+ * Configuration - User Interface
+ */
+.content .admin-list a[href $='admin/config/user-interface/iconizer'] {
+   background: url(admin_icons/user-interface-iconizer.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/config/user-interface/shortcut'] {
+   background: url(admin_icons/user-interface-shortcut.png) no-repeat 0 50%;
+}
+
+/**
+ * Configuration - System
+ */
+.content .admin-list a[href $='admin/config/system/actions'] { 
+   background: url(admin_icons/system-actions.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/config/system/statistics'] { 
+   background: url(admin_icons/system-statistics.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/config/system/cron'] { 
+   background: url(admin_icons/system-cron.png) no-repeat 0 50%;
+}
+.content .admin-panel a[href $='admin/config/system/site-information'] { 
+   background: url(admin_icons/system-site-information.png) no-repeat 0 50%;
+}
+
+/**
+ * Configuration - Media
+ */
+.content .admin-list a[href $='admin/config/media/file-system'] {
+   background: url(admin_icons/media-file-system.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/config/media/image-styles'] {
+   background: url(admin_icons/media-image-styles.png) no-repeat 0 50%;
+}
+
+/**
+ * Configuration - Content
+ */
+.content .admin-list a[href $='admin/config/content/formats'] {
+   background: url(admin_icons/content-formats.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/config/content/mollom'] { 
+   background: url(admin_icons/content-mollom.png) no-repeat 0 50%;
+}
+
+/**
+ * Configuration - Development
+ */
+.content .admin-list a[href $='admin/config/development/performance'] {
+   background: url(admin_icons/development-performance.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/config/development/maintenance'] { 
+   background: url(admin_icons/development-maintenance.png) no-repeat 0 50%;
+}
+
+/**
+ * Configuration - Services
+ */
+.content .admin-list a[href $='admin/config/services/rss-publishing'] { 
+   background: url(admin_icons/services-rss-publishing.png) no-repeat 0 50%;
+}
+
+/**
+ * Configuration - Regional
+ */
+.content .admin-list a[href $='admin/config/regional/settings'] {
+   background: url(admin_icons/regional-settings.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/config/regional/language'] {
+   background: url(admin_icons/regional-language.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/config/regional/translate'] {
+   background: url(admin_icons/regional-translate.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/config/regional/date-time'] { 
+   background: url(admin_icons/regional-date-time.png) no-repeat 0 50%;
+}
+
+/**
+ * Configuration - Search
+ */
+.content .admin-list a[href $='admin/config/search/settings'] { 
+   background: url(admin_icons/search-settings.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/config/search/clean-urls'] {
+   background: url(admin_icons/search-clean-urls.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/config/search/path'] { 
+   background: url(admin_icons/search-path.png) no-repeat 0 50%;
+}
+
+/**
+ * Configuration - People
+ */
+.content .admin-list a[href $='admin/config/people/accounts'] {
+   background: url(admin_icons/people-accounts.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/config/people/ip-blocking'] {
+   background: url(admin_icons/people-ip-blocking.png) no-repeat 0 50%;
+}
+
+/**
+ * Configuration - Reports
+ */
+.content .admin-list a[href $='admin/reports/status'] {
+   background: url(admin_icons/reports-status.png) no-repeat 0 50%;
+}
+.content .admin-list a[href $='admin/reports/updates'] {
+   background: url(admin_icons/reports-updates.png) no-repeat 0 50%;
+}
+
+.content .admin-list a[href $='admin/reports'] {
+   background: url(admin_icons/reports.png) no-repeat 0 50%;
+}.content .admin-list a[href $='admin/reports'] {
+   background: url(admin_icons/reports.png) no-repeat 0 50%;
+}.content .admin-list a[href $='admin/reports'] {
+   background: url(admin_icons/reports.png) no-repeat 0 50%;
+}
+ 
+/*
+dl.admin-list dt a[href $='admin/settings/error-reporting'],
+div.admin-panel ul li a[href $='admin/settings/error-reporting'] { 
+   background: url(admin_icons/error-reporting.png) no-repeat 0 50%;
+}
+*/  
+/**
+ * Admin/Content
+ */
+ /*
+   
+dl.admin-list dt a[href $='admin/content/forum'],
+div.admin-panel ul li a[href $='admin/content/forum'] {  
+   background: url(admin_icons/forum.png) no-repeat 0 50%;
+}
+/**
+ * Simplenews
+ */
+ /*
+dl.admin-list dt a[href $='admin/content/simplenews'],
+div.admin-panel ul li a[href $='admin/content/simplenews'] { 
+   background: url(admin_icons/newsletters.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/content/simplenews/sent'],
+div.admin-panel ul li a[href $='admin/content/simplenews/sent'] { 
+   background: url(admin_icons/simplenews-sent.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/content/simplenews/types'],
+div.admin-panel ul li a[href $='admin/content/simplenews/types'] { 
+   background: url(admin_icons/simplenews-types.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/content/simplenews/notsent'],
+dl.admin-list dt a[href $='admin/content/simplenews/notsent'],
+div.admin-panel ul li a[href $='admin/content/simplenews/notsent'] { 
+   background: url(admin_icons/simplenews-notsent.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/content/simplenews/users'],
+div.admin-panel ul li a[href $='admin/content/simplenews/users'] { 
+   background: url(admin_icons/simplenews-users.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/content/node-settings'],
+div.admin-panel ul li a[href $='admin/content/node-settings'] { 
+   background: url(admin_icons/node-settings.png) no-repeat 0 50%;
+}
+
+dl.admin-list dt a[href $='admin/content/rss-publishing'],
+div.admin-panel ul li a[href $='admin/content/rss-publishing'] { 
+   background: url(admin_icons/rss-publishing.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/content/search'],
+div.admin-panel ul li a[href $='admin/content/search'] { 
+   background: url(admin_icons/search-content.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/content/comment'],
+div.admin-panel ul li a[href $='admin/content/comment'] { 
+   background: url(admin_icons/comment.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/content/nodewords'],
+div.admin-panel ul li a[href $='admin/content/nodewords'] { 
+   background: url(admin_icons/nodewords.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/content/node_import'],
+div.admin-panel ul li a[href $='admin/content/node_import'] { 
+   background: url(admin_icons/node-import.png) no-repeat 0 50%;
+}
+*/
+/**
+ * Admin/Build
+ */
+ /*
+
+
+dl.admin-list dt a[href $='admin/build/views'],
+div.admin-panel ul li a[href $='admin/build/views'] { 
+   background: url(admin_icons/views.png) no-repeat 0 50%;
+}
+
+dl.admin-list dt a[href $='admin/build/contact'],
+div.admin-panel ul li a[href $='admin/build/contact'] { 
+   background: url(admin_icons/contact.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/build/import'],
+div.admin-panel ul li a[href $='admin/build/import'] { 
+   background: url(admin_icons/import.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/build/export'],
+div.admin-panel ul li a[href $='admin/build/export'] { 
+   background: url(admin_icons/export.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/build/translate'],
+div.admin-panel ul li a[href $='admin/build/translate'] { 
+   background: url(admin_icons/translate.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/build/custom_breadcrumbs'],
+div.admin-panel ul li a[href $='admin/build/custom_breadcrumbs'] { 
+   background: url(admin_icons/custom_breadcrumbs.png) no-repeat 0 50%;
+}
+
+*/
+/**
+ * Admin/Settings
+ */
+ /*
+dl.admin-list dt a[href $='admin/settings/custom-breadcrumbs'],
+div.admin-panel ul li a[href $='admin/settings/custom-breadcrumbs'] { 
+   background: url(admin_icons/custom-breadcrumbs-settings.png) no-repeat 0 50%;
+}
+
+dl.admin-list dt a[href $='admin/settings/clean-urls'],
+div.admin-panel ul li a[href $='admin/settings/clean-urls'] { 
+   background: url(admin_icons/clean-urls.png) no-repeat 0 50%;
+}
+
+
+dl.admin-list dt a[href $='admin/settings/image-toolkit'],
+div.admin-panel ul li a[href $='admin/settings/image-toolkit'] { 
+   background: url(admin_icons/image-toolkit.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/settings/front'],
+div.admin-panel ul li a[href $='admin/settings/front'] { 
+   background: url(admin_icons/front.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/settings/admin'],
+div.admin-panel ul li a[href $='admin/settings/admin'] { 
+   background: url(admin_icons/admin.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/settings/uploads'],
+div.admin-panel ul li a[href $='admin/settings/uploads'] { 
+   background: url(admin_icons/uploads.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/settings/throttle'],
+div.admin-panel ul li a[href $='admin/settings/throttle'] { 
+   background: url(admin_icons/throttle.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/settings/filters'],
+div.admin-panel ul li a[href $='admin/settings/filters'] { 
+   background: url(admin_icons/filters.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/settings/googleanalytics'],
+div.admin-panel ul li a[href $='admin/settings/googleanalytics'] { 
+   background: url(admin_icons/googleanalytics.png) no-repeat 0 50%;
+}
+
+dl.admin-list dt a[href $='admin/settings/securelogin'],
+div.admin-panel ul li a[href $='admin/settings/securelogin'] { 
+   background: url(admin_icons/securelogin.png) no-repeat 0 50%;
+}
+
+dl.admin-list dt a[href $='admin/settings/devel'],
+div.admin-panel ul li a[href $='admin/settings/devel'] { 
+   background: url(admin_icons/devel.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/settings/coder'],
+div.admin-panel ul li a[href $='admin/settings/coder'] { 
+   background: url(admin_icons/coder.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/settings/kt'],
+div.admin-panel ul li a[href $='admin/settings/kt'] { 
+   background: url(admin_icons/kt.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/settings/votingapi'],
+div.admin-panel ul li a[href $='admin/settings/votingapi'] { 
+   background: url(admin_icons/votingapi.png) no-repeat 0 50%;
+}
+*/
+/**
+ * Organic Groups
+ */
+ /*
+dl.admin-list dt a[href $='admin/og/og'],
+div.admin-panel ul li a[href $='admin/og/og'] { 
+   background: url(admin_icons/og.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/og/og_forum'],
+div.admin-panel ul li a[href $='admin/og/og_forum'] { 
+   background: url(admin_icons/og_forum.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/og/og_access'],
+div.admin-panel ul li a[href $='admin/og/og_access'] { 
+   background: url(admin_icons/og_access.png) no-repeat 0 50%;
+}
+*/
+/**
+ * Admin/User
+ */
+ /*
+dl.admin-list dt a[href $='admin/user/permissions'],
+div.admin-panel ul li a[href $='admin/user/permissions'] { 
+   background: url(admin_icons/access.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/user/rules'],
+div.admin-panel ul li a[href $='admin/user/rules'] { 
+   background: url(admin_icons/rules.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/user/roles'],
+div.admin-panel ul li a[href $='admin/user/roles'] { 
+   background: url(admin_icons/roles.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/user/profile'],
+div.admin-panel ul li a[href $='admin/user/profile'] { 
+   background: url(admin_icons/user-profile.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/user/user_import'],
+div.admin-panel ul li a[href $='admin/user/user_import'] { 
+   background: url(admin_icons/user-import.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/user/realname'],
+div.admin-panel ul li a[href $='admin/user/realname'] { 
+   background: url(admin_icons/realname.png) no-repeat 0 50%;
+}
+*/
+/**
+ * Admin/Reports
+ */
+/*
+dl.admin-list dt a[href $='admin/reports/access-denied'],
+div.admin-panel ul li a[href $='admin/reports/access-denied'] { 
+   background: url(admin_icons/access-denied.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/reports/page-not-found'],
+div.admin-panel ul li a[href $='admin/reports/page-not-found'] { 
+   background: url(admin_icons/page-not-found.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/reports/dblog'],
+div.admin-panel ul li a[href $='admin/reports/dblog'] { 
+   background: url(admin_icons/watchdog.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/reports/search'],
+div.admin-panel ul li a[href $='admin/reports/search'] { 
+   background: url(admin_icons/search-log.png) no-repeat 0 50%;
+}
+dl.admin-list dt a[href $='admin/reports/systeminfo'],
+div.admin-panel ul li a[href $='admin/reports/systeminfo'] { 
+   background: url(admin_icons/systeminfo.png) no-repeat 0 50%;
+}
+
+*/

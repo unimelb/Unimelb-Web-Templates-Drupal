@@ -1,0 +1,11 @@
+name = ie6update
+description = In IE6, pops up a IE style dialog notifying the user that there is an update to their browser, hoping to trick the user into updating to the latest version of IE.
+core = 7.x
+files[] = ie6update.module
+
+; Information added by drupal.org packaging script on 2011-02-25
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "ie6update"
+datestamp = "1298619408"
+

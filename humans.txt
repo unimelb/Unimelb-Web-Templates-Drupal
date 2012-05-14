@@ -1,0 +1,36 @@
+This file is designed to let interested parties know who designed and developed this website - More information can be found at http://humanstxt.org/
+
+/* Local Site */
+
+	Designer: 
+
+	Developer: 
+
+	Content Producers: 
+		
+/* Web Templates */
+
+Web Branding for The University of Melbourne is defined by the Marketing and Communications Web Team (http://marcom.unimelb.edu.au/). 
+
+More information can be found at http://brand.unimelb.edu.au.
+
+Templates designed and developed by:
+
+	Anthony Kolber (@kolber)
+	Toby Hede (@tobyhede)
+	Paul Tagell (@tagell).
+
+Iconography under licence from helveticons.ch
+
+/* Drupal Distro */
+
+Unimelb Drupal Distro developed by:
+
+	Media Insights - media@insights.net.au
+	Luke Hodge - luke@insights.net.au
+	Kelvin Wong - kelvin@insights.net.au
+	Joshua Martin - josh@insights.net.au
+
+Thanks to Aaron Tan and team at the Faculty of Architecture, Building and Planning, University of Melbourne, and Paul Tagell and team at Marketing and Communications, University of Melbourne - Media Insights 2011.
+
+

@@ -1,0 +1,12 @@
+name = Invisimail
+description = Attempts to thwart spam-bots by encoding email addresses.
+dependencies[] = filter
+core = 7.x
+files[] = invisimail.module
+
+; Information added by drupal.org packaging script on 2011-02-25
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "invisimail"
+datestamp = "1298619467"
+

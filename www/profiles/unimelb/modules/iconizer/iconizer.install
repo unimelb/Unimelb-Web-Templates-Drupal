@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Install functions for Iconizer Module
+ */
+
+function iconizer_install() {
+}
+
+function iconizer_uninstall() {
+  // cleaning variables setted
+  variable_del('iconizer_themes_enable');
+  variable_del('iconizer_themes_path');
+  variable_del('iconizer_admin_icons');
+  variable_del('iconizer_admin_icons_theme');
+  variable_del('iconizer_files_icons');
+  variable_del('iconizer_files_icons_visibility');
+  variable_del('iconizer_files_icons_visibility_pages');
+  variable_del('iconizer_files_icons_theme');
+  variable_del('iconizer_proto_icons');
+  variable_del('iconizer_proto_icons_theme');
+
+}

@@ -1,0 +1,467 @@
+@media screen and (max-width: 630px){
+.wrapper .polaroid {
+	padding: 5px;
+	border: 5px solid transparent;
+	}	
+}
+
+.field-name-field-first-name, .field-name-field-last-name {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.field-name-field-first-name, .field-name-field-city-or-suburb, .field-name-field-postcode-or-zip-code, .field-name-field-state-or-territory {
+float: left;
+margin-right: 6px;
+display: block;	
+}
+
+.field-name-field-last-name {
+display: block;	
+}
+
+
+
+.field-type-image .contextual-links-wrapper, .field-type-image .contextual-links-trigger, 
+.banner .contextual-links-wrapper, .banner .contextual-links-trigger  {
+display: none;	
+visibility: hidden;
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+    margin-top: 0;
+}
+
+table {
+    margin-top: 0;
+}
+
+.maintenance-page h1 {
+display: none;	
+}
+
+h3.maintenance-notice {
+padding: 20px 0 0 20px;	
+color: #fff;	
+}
+	
+p.maintenance-notice {
+padding: 20px 0 0 20px;	
+}
+
+
+.pullquote {
+padding-top: 0;	
+}
+
+h2, h3, h4, .pullquote {
+    padding: 0;
+}
+
+.col-8 {
+    margin-left: 6px;
+}
+
+.not-front.non-mobile #block-system-main {
+	margin-left: -6px;
+}
+
+#newsbanner {
+	max-width: 940px;
+    margin-left: 0px!important;	
+}
+
+p.event {
+background-image: url(/profiles/unimelb/themes/unimelb/images/icon-clock.png);
+background-position: 0px 1px;
+background-repeat: no-repeat;
+padding-left: 20px;
+}
+
+
+#admin-menu,#admin-menu ul {
+z-index:1001;
+}
+
+.aside {
+display:block;
+margin:0;
+padding:0;
+}
+
+img {
+display: block;
+width: auto;
+height: auto;	
+}
+
+.front .header {
+margin-bottom:0;
+}
+
+.front .header.with-ht {
+margin:0 0 8px;
+}
+
+.front .header.without-ht,.header {
+margin:0 0 28px;
+}
+
+.front.mobile .header {
+margin:0 0 58px !important;	
+}
+
+.front .main {
+background:none;
+padding: 25px 0 0 0;
+}
+
+.header #headingtext {
+padding-top:8px;
+}
+
+.header #headingtext p {
+font-size:18px;
+margin-left: 5px;
+}
+
+.main {
+padding:20px 0 0;
+position:relative;
+}
+
+.main .field-name-body a {
+border-bottom:1px solid;
+}
+
+.main a,.main .view-Profiles a,.front .main a,.main .view-zones a,.user-picture a,.main a:hover,.main a.contextual-links-trigger,.main .contextual-links a {
+border-bottom:0 none;
+}
+
+.main a.button:visited {
+color:#fff;
+}
+
+.main a:visited {
+color:#4C5E71;
+}
+
+.aside h2 {
+color:#036;
+}
+
+.main h1 {
+color:#036;
+padding:10px 0 3px;
+}
+
+.maintenance-page #container {
+height:240px;
+}
+
+.mobile #dropdown,
+.front .nav ul.menu,
+#search-form label,
+.not-logged-in #nice-menu-2,
+.view-display-id-News h3,
+.maintenance-page #header,
+.maintenance-page .main,
+.maintenance-page #backtotop,
+.nav ul li.active-trail > .more {
+display:none;
+}
+
+.nav {
+float:left;
+margin-bottom:0;
+margin-top:0;
+width: 220px;
+}
+
+.nav ul li.active-trail.closed ul,.view-display-id-News .news-item h3 {
+display:block;
+}
+
+.nav ul,
+.front.mobile .header.without-ht,
+.not-front.mobile .header.without-ht {
+margin:0;
+}
+
+.node,.block,.view,.views-row {
+display:block;
+position:relative;
+}
+
+.mobile .above {
+display:block;
+margin-top:20px;
+padding:10px 10px 0;
+}
+
+.non-mobile .above {
+margin-top:20px;
+display:block;
+}
+
+.non-mobile .abovebox {
+background-color:#fff;
+border:1px solid #036;
+padding:10px 10px 5px 10px;
+}
+
+.not-front .main {
+background:none;
+padding:15px 0 0!important;
+}
+
+.page-preview .polaroid img {
+clear:both;
+display:block;
+margin-bottom:0;
+margin-top:0;
+}
+
+.polaroid {
+margin-bottom:10px;
+padding: 5px 5px 0 5px !important;
+background-color: #fafcff !important;
+}
+
+.front .view-zones-home .polaroid {
+background-color: transparent !important;
+border: 0px none;
+}
+
+.polaroid h2,.above h2 {
+font-size:18px;
+margin:0 0 5px;
+padding:0;
+}
+
+.pullout ul li {
+list-style-type:none;
+}
+
+.rightside, #block-cck-blocks-field-aside {
+margin-top:0px;
+}
+
+form {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.nav ul li.first {
+margin-top: 0;	
+}
+
+.tabs {
+display:block;
+height:35px;
+position:absolute;
+right:10px;
+top:5px;
+}
+
+.user-picture {
+margin:10px 0;
+padding:0;
+}
+
+.view-filters form {
+margin-bottom:5px;
+margin-top:5px;
+overflow:hidden;
+}
+
+p, .p {
+    margin-bottom: 5px;
+}
+
+.views-exposed-form .views-exposed-widget {
+padding:10px 2px 0 0;
+}
+
+.views-table {
+width:100%;
+}
+
+
+
+.views-table td,.views-table tr,.views-table th {
+padding:5px;
+}
+
+.views-table ul {
+list-style-type:none;
+margin:0;
+padding:0;
+}
+
+.views-table ul li {
+margin:0 0 5px;
+padding:0;
+}
+
+.views-table ul li.last,.opening-hours p {
+margin:0;
+padding:0;
+}
+
+a:hover h2,a h2:hover,blockquote.opening-hours p.event-title a:hover,blockquote.opening-hours p.event-title a:hover {
+color:#c33;
+}
+
+body.html.blue.not-front {
+background-image:url(/profiles/unimelb/themes/unimelb/images/blue.jpg);
+}
+
+body.html.home.front {
+background-image:url(/profiles/unimelb/themes/unimelb/images/homepage-blue.jpg);
+}
+
+button,.button,
+input[type=submit],
+form.wbg input[type=submit],
+input.form-submit,
+input#edit-submit-profiles,
+input#edit-submit,
+input.button,a.button {
+height:auto;
+margin:0px 0 5px 0;
+padding:4px 6px 3px;
+line-height: normal;
+clear:both;
+float:none;
+}
+
+form .views-exposed-widget select,
+.form-item,
+.form-actions {
+margin-bottom:0;
+margin-top:0;
+}
+
+div.form-type-checkbox {
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+.views-exposed-form {
+	padding: 5px;
+}
+
+form input,form textarea,form select {
+display:inline;
+padding: 4px 6px 3px;
+}
+
+form label,form p {
+text-align:left;
+}
+
+fieldset#edit-advanced {
+display: none;	
+}
+
+form#search-form div, form#search-block-form div {
+padding: 5px;	
+}
+form#search-form div div, form#search-block-form div div {
+padding: 0px;	
+}
+
+form#search-form #edit-submit {
+	display: inline-block;
+margin-top: 6px;	
+}
+
+.field-name-body {
+margin: 0 0 5px 0;	
+}
+
+.polaroid .field-name-body p {
+margin: 0;	
+}
+
+h1#page-title {
+margin:0 0 5px;
+}
+
+h1,h2,h3,h4 {
+margin-bottom:5px;
+margin-top:0px;
+line-height: normal;
+}
+
+td.active {
+background-color:inherit;
+}
+
+th {
+background-color:#fff;
+}
+
+tr,tr.even,tr.odd {
+background-color:#e1eaf2;
+border-bottom:1px solid #B9CFE7;
+padding:.1em .6em;
+}
+
+ul li.expanded,ul li.leaf,ul li.collapsed {
+list-style-image:none;
+list-style-type:none;
+}
+
+ul.contextual-links li {
+line-height:15px;
+}
+
+ul.contextual-links li a,.contextual-links-processed .menu-list a {
+font-size:11px;
+line-height:15px;
+}
+
+ul.inline li {
+padding:0;
+}
+
+ul.primary {
+background-color:transparent;
+border-bottom:0 none;
+border-collapse:collapse;
+display:block;
+height:auto;
+line-height:normal;
+list-style:none;
+margin:10px 0 0;
+padding:10px 0 0;
+white-space:nowrap;
+}
+
+ul.primary li {
+background-color:transparent;
+display:inline;
+}
+
+ul.primary li a {
+background-color:#DFE9F4;
+border:1px solid #b0b9c2;
+height:auto;
+margin-right:10px;
+padding:5px 10px;
+text-decoration:none;
+}
+
+ul.primary li a:hover {
+background-color:#d3dde8;
+border-color:#99a0a8;
+}
+
+ul.primary li.active a {
+background-color:#c8d1db;
+border:1px solid #b0b9c2;
+}
+
+

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Unimelb Content Types feature.
+ */
+
+include_once 'unimelb_content_types.features.inc';

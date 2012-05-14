@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Unimelb People feature.
+ */
+
+include_once 'unimelb_people.features.inc';

@@ -1,0 +1,10 @@
+name = "Unimelb Settings"
+description = "Unimelb Settings"
+core = 7.x
+package = Unimelb Drupal Distro
+
+; thanks to Aaron Tan and team at the Faculty of Architecture, Building and Planning, University of Melbourne, and Paul Tagell and team at Marketing and Communications, University of Melbourne - Media Insights 2011
+
+files[] = unimelb_settings.module
+
+version = "7.x-1.0-beta4"

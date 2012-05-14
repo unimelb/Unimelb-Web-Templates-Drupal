@@ -1,0 +1,15 @@
+name = Unimelb
+description = The Unimelb Theme is part of the Unimelb Drupal Distro which delivers the University of Melbourne Web Templates and requires the Unimelb Settings module.
+package = Core
+core = 7.x
+engine = phptemplate
+
+regions[above]				= Above
+regions[content]			= Content
+regions[aside]				= Aside
+regions[home_column1]		= Home Column 1
+regions[home_column2]		= Home Column 2
+regions[home_column3]		= Home Column 3
+regions[home_column4]		= Home Column 4
+
+version = "7.x-1.0-beta3"

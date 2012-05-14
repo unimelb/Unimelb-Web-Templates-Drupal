@@ -1,0 +1,15 @@
+name = "Custom filter"
+description = "Allows the users with the right permission to create custom filters."
+package = "Input filters"
+configure = admin/config/content/customfilter
+core = 7.x
+
+files[] = customfilter.install
+files[] = customfilter.module
+
+; Information added by drupal.org packaging script on 2011-07-03
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "customfilter"
+datestamp = "1309651960"
+

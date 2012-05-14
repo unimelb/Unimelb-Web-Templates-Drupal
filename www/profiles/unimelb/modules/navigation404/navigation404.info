@@ -1,0 +1,11 @@
+name = "404 Navigation"
+description = "On a 404 page, ensure navigation links are displayed properly."
+
+core = 7.x
+
+; Information added by drupal.org packaging script on 2011-02-25
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "navigation404"
+datestamp = "1298619703"
+

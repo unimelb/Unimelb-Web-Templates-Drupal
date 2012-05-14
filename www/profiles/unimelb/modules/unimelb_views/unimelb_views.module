@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Unimelb Views feature.
+ */
+
+include_once 'unimelb_views.features.inc';

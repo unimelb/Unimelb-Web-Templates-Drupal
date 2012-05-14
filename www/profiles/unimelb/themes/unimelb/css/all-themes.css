@@ -1,0 +1,326 @@
+
+.html #admin-menu ul a {
+	font-size: 12px;
+}
+
+.html #admin-menu {
+	background-image: none;
+    background-color: #024 !important;
+}
+
+.html #admin-menu li li {
+	background-image: none;
+    background-color: #048 !important;
+}
+
+.html #admin-menu li li.expandable {
+	background-image: none;
+	background-color: #048 !important;
+}
+
+
+/* $Id: nice_menus.css,v 1.29 2010/10/26 03:43:17 vordude Exp $ */
+/*
+  This file contains the basic logic for nice menus, and should not be
+  edited.  To customize the menus, it's recommended to create a custom CSS
+  file using nice_menus_default.css as a template, then configure the module
+  to use your custom CSS file (this is done in the global settings tab of
+  the theme administration.)
+*/
+
+
+
+
+
+/*
+ * NICE MENUS - GENERIC
+ */
+
+.block-nice_menus {
+  line-height: normal;
+  z-index: 602;
+}
+
+.nice-menu {
+display: block;
+width: 100%;	
+}
+
+ul.nice-menu,
+ul.nice-menu ul {
+  z-index: 603;
+  position: relative;
+}
+
+ul.nice-menu li {
+  position: relative;
+}
+
+ul.nice-menu a {
+  color: #A8C5E0;
+  display: block;
+}
+
+ul.nice-menu a {
+  text-decoration: none; 
+}
+
+  ul.nice-menu a:hover, ul.nice-menu a:focus {
+    -webkit-transition: color 150ms linear;
+    -moz-transition: color 150ms linear;
+    transition: color 150ms linear;
+    color: #fff; }
+
+ul.nice-menu ul {
+  position: absolute;
+  visibility: hidden;
+}
+
+ul.nice-menu li.over ul {
+  visibility: visible;
+}
+
+ul.nice-menu ul li {
+  display: block;
+}
+
+ul.nice-menu:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+ul.nice-menu li:hover ul,
+ul.nice-menu li.menuparent li:hover ul,
+ul.nice-menu li.menuparent li.menuparent li:hover ul,
+ul.nice-menu li.menuparent li.menuparent li.menuparent li:hover ul,
+ul.nice-menu li.over ul,
+ul.nice-menu li.menuparent li.over ul,
+ul.nice-menu li.menuparent li.menuparent li.over ul,
+ul.nice-menu li.menuparent li.menuparent li.menuparent li.over ul {
+  visibility: visible;
+}
+
+ul.nice-menu li:hover ul ul,
+ul.nice-menu li:hover ul ul ul,
+ul.nice-menu li:hover li:hover ul ul,
+ul.nice-menu li:hover li:hover ul ul ul,
+ul.nice-menu li:hover li:hover li:hover ul ul,
+ul.nice-menu li:hover li:hover li:hover ul ul ul,
+ul.nice-menu li.over ul ul,
+ul.nice-menu li.over ul ul ul,
+ul.nice-menu li.over li.over ul ul,
+ul.nice-menu li.over li.over ul ul ul,
+ul.nice-menu li.over li.over li.over ul ul,
+ul.nice-menu li.over li.over li.over ul ul ul {
+  visibility: hidden;
+}
+
+ul.nice-menu li.menuparent ul {
+  overflow: visible !important;
+  /* overflow: hidden; */
+}
+
+ul.nice-menu li.menuparent ul iframe {
+  display: none;
+  display/**/: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: mask();
+  width: 20px;
+  height: 20px;
+}
+
+
+
+
+
+/*
+ * NICE MENUS - UNIMELB DROPDOWN REGION
+ */
+
+.dropdown {
+display:block;
+height:30px;
+overflow:visible;
+margin:0 0 0 0!important;
+}
+
+.front .dropdown {
+margin:0 0 15px 0!important;
+}
+
+.dropdown ul.nice-menu, .dropdown ul.nice-menu-down, .dropdown ul.nice-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 0px solid transparent;
+  float: left; /* LTR */
+  border: 0;
+}
+
+.dropdown ul.nice-menu li, .dropdown ul.nice-menu-down li {
+  border: 0px solid transparent;
+  border-top: 0;
+  border-left: 0;
+  float: left; 
+  background-color: #003b75;
+  margin: 0;
+}
+
+.dropdown ul.nice-menu ul, .dropdown ul.nice-menu-down ul {
+  top: 30px;
+  left: 0px;
+  border: 0;
+  border-top: 0px solid transparent;
+  margin-right: 0; 
+}
+
+.dropdown ul.nice-menu ul li, .dropdown ul.nice-menu-down ul li, .dropdown ul.nice-menu-down li li  {
+  width: 16em;
+  clear: both;
+  border-top: 0;
+  border-left: 0px solid transparent;
+  margin-right: 0px;
+  background: #003b75; /* LTR */
+}
+
+.dropdown ul.nice-menu-down li ul li ul {
+  left: 16em; /* LTR */
+  top: 0px;
+}
+
+.dropdown ul.nice-menu a {
+  padding: 0 10px 0 10px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.dropdown ul.nice-menu-down .menuparent a {
+  padding-right: 10px; /* LTR */
+}
+
+.dropdown ul.nice-menu-down li.menuparent {
+  background: #003b75; /* LTR */
+}
+
+.dropdown ul.nice-menu-down li:hover {
+  background: #003366; /* LTR */
+}
+
+.dropdown ul.nice-menu-down li.menuparent:hover {
+  background: #003366; /* LTR */
+}
+
+.dropdown ul.nice-menu-down li li.menuparent {
+  background: #003b75; /* LTR */
+}
+
+.dropdown ul.nice-menu-down li li:hover {
+  background: #003366; /* LTR */
+}
+
+.dropdown ul.nice-menu-down li li.menuparent:hover {
+  background: #003366; /* LTR */
+}
+
+
+
+
+
+/*
+ * NICE MENUS - #HELP REGION (SEVEN THEME) - ADJUSTMENTS
+ */
+
+
+
+.region-help .block {
+min-height: 40px;	
+}
+
+/*
+ * NICE MENUS - #HELP REGION (SEVEN THEME)
+ */
+
+#help ul.nice-menu, #help ul.nice-menu-down, #help ul.nice-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 0px solid #ccc;
+  float: left; /* LTR */
+  border: 0;
+}
+
+#help ul.nice-menu li, #help ul.nice-menu-down li {
+  border: 0px solid #ccc;
+  border-top: 0;
+  border-left: 0;
+  float: left; 
+  background-color: #eee;
+  margin: 0;
+}
+
+#help ul.nice-menu ul, #help ul.nice-menu-down ul {
+  top: 30px;
+  left: 0px;
+  border: 0;
+  border-top: 0px solid #ccc;
+  margin-right: 0; 
+}
+
+#help ul.nice-menu ul li, #help ul.nice-menu-down ul li, #help ul.nice-menu-down li li  {
+  width: 16em;
+  clear: both;
+  border-top: 0;
+  border-left: 0px solid #ccc;
+  margin-right: 0px;
+}
+
+#help ul.nice-menu-down li ul li ul {
+  left: 16em; /* LTR */
+  top: 0px;
+}
+
+#help ul.nice-menu a {
+  padding: 0 10px 0 10px;
+  height: 30px;
+  line-height: 30px;
+  color: #333;
+}
+
+#help ul.nice-menu-down .menuparent a {
+  padding-right: 10px; /* LTR */
+}
+
+#help ul.nice-menu-down li.menuparent {
+  background: #eee; /* LTR */
+}
+
+#help ul.nice-menu-down li:hover {
+  background: #ccc; /* LTR */
+}
+
+#help ul.nice-menu-down li.menuparent:hover {
+  background: #ccc; /* LTR */
+}
+
+#help ul.nice-menu-down li li.menuparent {
+  background: #eee; /* LTR */
+}
+
+#help ul.nice-menu-down li li:hover {
+  background: #ccc; /* LTR */
+}
+
+#help ul.nice-menu-down li li.menuparent:hover {
+  background: #ccc; /* LTR */
+}
+
+
+
+
+

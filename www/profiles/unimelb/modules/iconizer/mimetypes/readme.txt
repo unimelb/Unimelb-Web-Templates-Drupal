@@ -1,0 +1,1 @@
+Drop in this fomder the mimetype icons (default 16x16px)
