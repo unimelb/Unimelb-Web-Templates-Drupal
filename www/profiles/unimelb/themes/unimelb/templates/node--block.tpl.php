@@ -124,7 +124,7 @@ if(!$teaser) {
 	}
 }
 
-if(render($content['field_images']) != '') {
+if(render($content['field_images']) != '' && render($hide_images_value) == 'No') {
 	print '<div class="p"><a href="' . $the_url . '" ' . $the_url_target . '>' . render($content['field_images']) . '</a></div>';
 }
 

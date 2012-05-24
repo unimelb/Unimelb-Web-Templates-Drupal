@@ -99,6 +99,9 @@ $url_value = field_view_value('node', $node, 'field_url', $url[0], array());
 $url_options = field_get_items('node', $node, 'field_url_options');
 $url_options_value = field_view_value('node', $node, 'field_url_options', $url_options[0], array());
 
+$hide_images = field_get_items('node', $node, 'field_hide_images');
+$hide_images_value = field_view_value('node', $node, 'field_hide_images', $hide_images[0], array());
+
 if(render($url_options_value) == 'Yes' && render($url_value) != '') { 
 	$the_url = render($url_value); $the_url_target = ' target="_blank"'; 		
 } else {
@@ -115,7 +118,7 @@ print render($title_suffix);
 
 if($display_submitted) { print '<div class="submitted">' . $submitted . '</div>'; }
 
-if(render($content['field_images']) != '') {
+if(render($content['field_images']) != '' && render($hide_images_value) == 'No') {
 	print '<div class="p"><a href="' . $the_url . '" ' . $the_url_target . '>' . render($content['field_images']) . '</a></div>';
 }
 

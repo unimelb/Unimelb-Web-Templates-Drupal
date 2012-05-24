@@ -144,7 +144,7 @@ if(render($content['field_date']) != '') {
 	print '</p>';
 }	
 
-if(render($content['field_images']) != '') {
+if(render($content['field_images']) != '' && render($hide_images_value) == 'No') {
 	print '<div class="p">' . render($content['field_images']) . '</div>';
 }
 
