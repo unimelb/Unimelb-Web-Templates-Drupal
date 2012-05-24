@@ -125,7 +125,7 @@ print render($content);
 	print render($content['field_time']) . ' ~ ' . render($content['field_date']) . ' ~ ' . render($content['field_location']);
 	print '</p>';
 
-print '<a class="button" href="' . $node_url . '">Read more</a>'; 
+print '<a class="button" href="' . $the_url . '" ' . $the_url_target . '>Read more</a>'; 
 
 print '</div>';
 
