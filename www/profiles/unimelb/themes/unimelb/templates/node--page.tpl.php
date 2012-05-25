@@ -135,8 +135,7 @@ print render($title_suffix);
 
 if($display_submitted) { print '<div class="submitted">' . $submitted . '</div>'; }
 
-$summary = ($node->body['und'][0]['safe_summary'] ? $node->body['und'][0]['safe_summary'] : '');
-if($summary != '') { print '<p class="pullquote">' . $summary . '</p>'; }
+if(isset($node->body[$node->language][0]['summary'])) { print '<p class="pullquote">' . $node->body[$node->language][0]['summary'] . '</p>'; }
 
 if(render($content['field_date']) != '') {
 	print '<p class="event">';

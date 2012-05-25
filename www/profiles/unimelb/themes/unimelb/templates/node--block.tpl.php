@@ -117,12 +117,7 @@ if(!$page) { print '</a>'; }
 print '</h2>';
 print render($title_suffix);
 
-if(!$teaser) {
-	$summary = ($node->body['und'][0]['safe_summary'] ? $node->body['und'][0]['safe_summary'] : '');
-	if($summary != '') { 
-		print '<p class="pullquote">' . $summary . '</p>'; 
-	}
-}
+if(!$teaser) { if(isset($node->body[$node->language][0]['summary'])) { print '<p class="pullquote">' . $node->body[$node->language][0]['summary'] . '</p>'; } }
 
 if(render($content['field_images']) != '' && render($hide_images_value) == 'No') {
 	print '<div class="p"><a href="' . $the_url . '" ' . $the_url_target . '>' . render($content['field_images']) . '</a></div>';
